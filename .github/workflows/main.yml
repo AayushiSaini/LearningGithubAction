@@ -1,0 +1,12 @@
+name: hello-world
+
+on: 
+  push:  # This means the workflow will run on push events
+
+jobs:
+  my-job:  # This is the name of the job
+    runs-on: ubuntu-latest  # This specifies the environment
+
+    steps:  # This is where you define the steps to be executed
+      - name: my-step  # Name of the step
+        run: echo "hello world"  # Command to run
